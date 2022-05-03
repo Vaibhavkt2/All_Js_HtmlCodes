@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="display1"></p>
+    <!--
+    <script>
+        let i=0;
+        let display=[];
+        while(i<=10){
+            display += i +"<hr>";
+            i++;
+        }
+        document.getElementById("display1").innerHTML=display;
+
+    </script>
+    -->
+    <!--
+    <script>
+        let i=0;
+        let display=[];
+          do{
+            display += i +"<hr>";
+            i++;
+        }while(i<=10)      //Terminating Condition 
+
+        document.getElementById("display1").innerHTML=display;
+
+    </script>
+    -->
+    <!--
+    <script>
+        let i=0;
+        let display=[];
+        do{
+            display += i +"<hr>";
+            if(i==7){
+                break;
+            }
+            i++;
+        }while(i<=10)      //Terminating Condition 
+    
+        document.getElementById("display1").innerHTML=display;
+
+    </script>
+    -->
+    <script>
+        let i= 0;
+        let display =[];
+        for(i=0; i<=10; i++){
+            
+            if(i===5){
+                continue;
+            }
+            display += i+"<br>";
+        }
+        document.getElementById("display1").innerHTML=display;
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p id="name"></p>
+
+    <script>
+        const batsman= {
+            Batt: "Batsman",
+            name1: "Rohit Shrama",
+            name2: "Mayank Agraval",
+            name3: "Virat Kolhi",
+            name4: "Shrayes iyer",
+            name5: "KL Rahul",
+            All: "Allrounder",
+            name6: "Ravindra Jadeja",
+            name7: "Ravichandran Ashvin",
+            name8: "Hardik Pandya",
+            Bowl: "Bollwer",
+            name9: "Mohammad Shami",
+            name10: "Jayasprit Bumrah",
+            name11: "Yujvendra Chahal",
+            bat:function(){
+                return this.Batt+ "<br><hr>" +this.name1+ "<br>"+this.name2 + "<br>"+this.name3+ "<br>"+this.name4 + "<br>"+ this.name5+ "<br><br>" + this.All+ "<br><hr>" +this.name6+ "<br>"+this.name7 + "<br>"+this.name8+ "<br><br>"+this.Bowl + "<br><hr>"+ this.name9+ "<br>"+this.name10 + "<br>"+ this.name;
+            },
+            
+        };
+
+        document.getElementById("name").innerHTML=batsman.bat();
+    </script>
+</body>
+</html>

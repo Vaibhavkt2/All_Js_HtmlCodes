@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="display"></p>
+    <p id="display1"></p>
+    <p id="display2"></p>
+    <p id="display3"></p>
+    <script>
+        let text ="";
+        const trainee = new Set(["Vaibhav", "Talele", "Vt", "Ram"]);
+        //const trainee1 = trainee.add("shyam");
+        
+        //trainee.clear();     //0
+        //trainee.delete("Talele");    //3 
+        //trainee.keys();    //last value
+         
+        trainee.forEach(function(value) {
+            text += value+"<br>";
+        } ) 
+        const trai=trainee.has("Vt");    //Gives Boolen Value --> True/ False  
+                                         
+       document.getElementById("display").innerHTML= trainee.size;
+       // document.getElementById("display1").innerHTML= trainee1.size;
+       document.getElementById("display2").innerHTML= text;
+       document.getElementById("display1").innerHTML= trai;
+       
+        
+
+    </script>
+</body>
+</html>

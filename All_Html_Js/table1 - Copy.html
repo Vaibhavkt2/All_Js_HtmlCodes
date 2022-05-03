@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" src="/table.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: ghostwhite;
+        }
+
+        table{
+            border-collapse: collapse;
+            margin: 20px;
+            color: red;
+        }
+
+        td, th{
+            border: 2px solid rgb(10, 9, 9);
+        }
+
+        .sr{
+            width:10px;
+        }
+
+        .name{
+            width: 20px;
+        }
+
+        .sal{
+            width: 150px;
+        }
+
+        #INR, #EUR, #USD{
+            display: name;
+           
+        }
+
+        #report{
+            color:rgb(23, 42, 212);
+            margin: 20px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <mark><h1>My First Bootstrap Page</h1></mark>
+        
+      </div>
+
+    <div class="btndiv">
+        <button onclick="inrreport()">Report in INR</button>
+        <button onclick="eurreport()">Report in EUR</button>
+        <button onclick="usdreport()">Report in USD</button>
+    </div>
+
+    <div class="row">
+    
+    <div id="report" class="container"></div>
+
+    <table id="INR" class="col-sm-8">
+        <thead>
+            <tr style="color:white ; background-color:black">
+                <th> Sr.No.</th>
+                <th> Emp name</th>
+                <th> Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Emp1</td>
+                <td>&#8377 10000</td>
+            </tr>
+            <tr style="background-color: wheat">
+                <td>2</td>
+                <td>Emp2</td>
+                <td>&#8377 15000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Emp3</td>
+                <td>&#8377 20000</td>
+            </tr>
+            <tr style="background-color: wheat">
+                <td>4</td>
+                <td>Emp4</td>
+                <td>&#8377 25000</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Emp5</td>
+                <td>&#8377 30000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table id="EUR" class="col-sm-8">
+        <thead>
+            <tr style="color:white ; background-color:black">
+                <th> Sr.No.</th>
+                <th> Emp name</th>
+                <th> Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="ka">
+                <td>1</td>
+                <td>Emp1</td>
+                <td>&#8364 1000</td>
+            </tr>
+            <tr style="background-color: wheat">
+                <td>2</td>
+                <td>Emp2</td>
+                <td>&#8364 1500</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Emp3</td>
+                <td>&#8364 2000</td>
+            </tr>
+            <tr style="background-color: wheat">
+                <td>4</td>
+                <td>Emp4</td>
+                <td>&#8364 400</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Emp5</td>
+                <td>&#8364 1200</td>
+            </tr>
+        </tbody>
+    </table>
+    <table id="USD" class="col-sm-8">
+    <thead>
+        <tr style="color:white ; background-color:black">
+            <th> Sr.No.</th>
+            <th> Emp name</th>
+            <th> Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Emp1</td>
+            <td>&#36 400</td>
+        </tr>
+        <tr style="background-color: wheat">
+            <td>2</td>
+            <td>Emp2</td>
+            <td>&#36 150</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Emp3</td>
+            <td>&#36 200</td>
+        </tr>
+        <tr style="background-color: wheat">
+            <td>4</td>
+            <td>Emp4</td>
+            <td>&#36 205</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Emp5</td>
+            <td>&#36 475</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<script>
+    function inrreport(){
+        document.getElementById("report").innerHTML="Report in INR";
+        document.getElementById("INR").style.display="block";
+        document.getElementById("EUR").style.display="none";
+        document.getElementById("USD").style.display="none";
+    }
+
+    function eurreport(){
+        document.getElementById("report").innerHTML="Report in EUR";
+        document.getElementById("EUR").style.display="block";
+        document.getElementById("INR").style.display="none";
+        document.getElementById("USD").style.display="none";
+    }
+
+    function usdreport(){
+        document.getElementById("report").innerHTML="Report in USD";
+        document.getElementById("USD").style.display="block";
+        document.getElementById("INR").style.display="none";
+        document.getElementById("EUR").style.display="none";
+    }
+</script>
+
+<button type="button" onclick="inrreport()">Blast</button>
+<button type="button" onclick="eurreport()">Blast</button>
+<button type="button" onclick="usdreport()">Blast</button>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        class car{
+            constructor(company, categeory, model, color, varient, prize, year){
+                this.company = company;
+                this.categeory= categeory;
+                this.model = model;
+                this.color = color;
+                this.varient = varient;
+                this.prize= prize;
+                this.year = year;
+            }
+            age(){
+                let date = new Date();
+                return date.getFullYear() - this.year;
+
+            }
+        }
+
+        function objrefer1(){
+            tatacar = new car("TATA", "SUV", "Nexon", "Red", "Petrol", 1050000, 2019);
+            return tatacar.company +"<br>"+ tatacar.categeory  +"<br>"+ tatacar.model +"<br>"+ tatacar.color + "<br>"+ tatacar.varient+"<br>"+ tatacar.preiz +"<br>"+ tatacar.age();
+        }
+
+        function maruti(){
+        let maruticar = new car("Maruti", "Suzuki", "maruti 800", "black", "Petrol", 500000, 2008);
+        return maruticar.company+"<br>"+ maruticar.categeory  +"<br>"+ maruticar.model +"<br>"+ maruticar.color + "<br>"+ maruticar.varient+"<br>"+ maruticar.preiz +"<br>"+ maruticar.age();
+        }
+
+         
+    </script>
+    <button type="submit" onclick="document.getElementById('demo').innerHTML= objrefer1();">TATA CAR</button>
+    <button type="submit" onclick="document.getElementById('demo1').innerHTML= maruti();">Maruti</button>
+</body>
+</html>

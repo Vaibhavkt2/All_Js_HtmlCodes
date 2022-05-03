@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p name="add"></p>
+    <p name="sub"></p>
+    <p name="mul"></p>
+    <p name="div"></p>
+    <p name="mod"></p>
+
+    <script>
+        function fun1(arg1, arg2){
+            return arg1 + arg2;
+        }
+
+        function fun2(arg1, arg2){
+            return arg1 - arg2;
+        }
+
+        function fun3(arg1, arg2){
+            return arg1 * arg2;
+        }
+
+        function fun4(arg1, arg2){
+            return arg1 / arg2;
+        }
+
+        function fun5(arg1, arg2){
+            return arg1 % arg2;
+        }
+
+        document.getElementsByName("add")[0].innerHTML=fun1(10, 10);
+        document.getElementsByName("sub")[0].innerHTML=fun2(20, 10);
+        document.getElementsByName("mul")[0].innerHTML=fun3(20, 10);
+        document.getElementsByName("div")[0].innerHTML=fun4(20, 10);
+        document.getElementsByName("mod")[0].innerHTML=fun5(20, 10);
+    </script>
+</body>
+</html>

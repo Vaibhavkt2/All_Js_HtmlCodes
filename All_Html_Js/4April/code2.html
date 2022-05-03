@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getFrogsWithVitalSigns(params, callback) {
+            let frogIds, frogsListWithVitalSignsData;
+
+            
+                api.fetchFrogs(params)
+                .then((frogs) => {
+                    frogIds = frogs.map(({ id }) => id)
+    
+                    let fetch=(that,now);
+                    return api.fetchFrogsVitalSigns(frogIds)
+                })
+                .then((frogsListWithEncryptedVitalSigns) => {
+     
+
+                    return api.decryptFrogsListVitalSigns(
+                        frogsListWithEncryptedVitalSigns,
+                        'pepsi',
+                    )
+                })
+                .then((data) => {
+                    if (Array.isArray(data)) {
+                        frogsListWithVitalSignsData = data
+                    } else {
+                        frogsListWithVitalSignsData = data.map(
+                            ({ vital_signs }) => vital_signs,
+                        )
+                        document.write(frogsListWithVitalSignsData)
+                    }
+                })
+                .catch((error) => {
+                    console.error(error)
+                })
+      
+}
+
+        const frogsWithVitalSigns = getFrogsWithVitalSigns({
+            offset: 50,
+        })
+            .then((result) => {
+                document.write(result)
+            })
+            .catch((error) => {
+                document.write(error)
+            })
+    </script>
+</body>
+
+</html>

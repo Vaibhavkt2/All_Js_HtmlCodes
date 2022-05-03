@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="display"></p>
+    <p id="display1"></p>
+    <p id="display2"></p>
+
+    <script>
+        let trainees ='{"frontendTrainees" : ['+'{"firstname": "Vaibhav", "lastname": "Talele"}, '+' {"firstname" : "Ram", "lastname": "patil"}]}';
+
+        const traineeobject = JSON.parse(trainees);
+        document.getElementById("display").innerHTML = traineeobject.frontendTrainees[0].firstname;
+        document.getElementById("display1").innerHTML = JSON.stringify(trainees);
+        document.getElementById("display2").innerHTML = traineeobject.frontendTrainees[1].firstname +"  "+ traineeobject.frontendTrainees[1].lastname;
+        </script>
+</body>
+</html>

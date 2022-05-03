@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text"></p>
+    <p id="len"></p>
+    <p id="escape"></p>
+    <p id="escape1"></p>
+    <p id="escape2"></p>
+    <script>
+        let text= "vaibhav Talele"
+        let text1= "Jalgaon"
+        let text2= "\"let,s Go To Pune, We Will Enjoy Lot\""
+        let filepath=  "HTML:vt\\js\\img";
+        let Address= "AT Post Amode, TAl: Yawal \
+        Dist-Jalgaon."
+
+        document.getElementById("text").innerHTML=text+ "<br>"+ text1;
+        document.getElementById("len").innerHTML=text.length+ text1.length;
+        document.getElementById("escape").innerHTML=text2;
+        document.getElementById("escape1").innerHTML=filepath;
+        document.getElementById("escape2").innerHTML=Address;
+    </script>
+
+</body>
+</html>

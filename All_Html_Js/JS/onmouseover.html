@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="c2c">This Is Jalgaon</p>
+    <h1 onmouseover = changeTo(this) >click Me </h1>
+    <h1 id="t1" onclick ="dispDate()" >  Time </h1>
+    <button type="button " onmouseover=document.getElementById().style.color="red" > click Here </button>
+
+    <script>
+        function changeTo(id){
+            id.style.color ="red";
+            id.style.fontsize = "20px";
+        }
+        function dispDate(){
+            
+            document.getElementById("t1").innerHTML = Date();
+        }
+    </script>
+</body>
+</html>

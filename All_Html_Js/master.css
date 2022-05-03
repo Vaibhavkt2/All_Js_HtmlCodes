@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(44, 190, 209);
+}
+table{
+    font-style: inherit;
+}
+
+
+table, th, td{
+    border:5px solid rgb(22, 19, 19);
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 5px;
+    text-align: center;
+}
+
+.toc{
+    background-color: aqua;
+    color: Black;
+    Margin: 20px;
+    padding: 20px;
+}
+*{
+    box-sizing: border-box;
+}
+
+div{
+    border: 2px white;
+    text-align: center;
+    background-image: url("down1.jfif");
+    font-size: 20px;
+}

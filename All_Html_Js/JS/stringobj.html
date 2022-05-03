@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="string"></p>
+    <p id="string1"></p>
+    <p id="string2"></p>
+    <script>
+         let normalstring= "vaibhav";
+         let normalstring1= "vaibhav";
+
+         let stringobject= new String("Vaibhav");
+         let stringobject1= new String("Vaibhav");
+                                                       // type: String                 object
+         document.getElementById("string").innerHTML=typeof normalstring+ "<br>"+ typeof stringobject;
+
+         //We Compare Two local Variable , But We cannot Compare Two Object.....!!!!!!!!!!!!
+         document.getElementById("string1").innerHTML=(normalstring==normalstring1); //.......True
+
+         //We Cannot Compare Two Object......!!!!!!!!!!!!!!!! Most IMP
+         document.getElementById("string2").innerHTML=(stringobject==stringobject1); //.........False
+    </script>
+
+</body>
+</html>

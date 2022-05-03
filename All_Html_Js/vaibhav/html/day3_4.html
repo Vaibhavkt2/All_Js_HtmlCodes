@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+href="https://secure-web.cisco.com/11n_uDvQl7Td-rVoO5hmvz5nrNVHoK_NrIDWKdx3RzjdjdZYHxjL66vdD-BLiS59wU6_N9hVvr8ALIkCAhd4hiFUD0U7IGV2_8PCBAn3c2tm0b4A-rnijeyRY_R6eJ6xrxn0p2yKwf-8ctApZQLhe2-pFUTN5P9i4gYxkw6HfSV3Zyu8Ur3KGSgYBaRmLyvpxHtaHNBtTk_-Iz0CddVKlvjIc0uOZNQsi27JYJ6_YpL2ZglY3JZhjQgVwk61nHnknj8Q_Dbm3BtGLxgHv-wM6dLEBiyfCLKpipVf1sJJXbNkzal8RMwdfdSr-BETMoIl3oDzXVSyn06AYMKijRGabLWtKesfgNmt07Li0AvOT4vjqhzU6IZdGGujPyJcC4EjoWXA9fTGPNmFuQ7rdEfYsuA/https%3A%2F%2Fmaxcdn.bootstrapcdn.com%2Fbootstrap%2F3.4.1%2Fcss%2Fbootstrap.min.css">
+  <script src="https://secure-web.cisco.com/1AUCjekQyrxtIsWEk3vnvK7CJpllB-OndmI-lsd7Wv1eB2P3EecZWAOnsGMW0oQOtFcCKkpTFSY3QonJYD6Nw3S1pQRD7wxdsICIYEoqMmcpBRlCd3tBSfKeDOQPwPWKujTCitZ6RJGg4q9JxmgqrsCybHlVyeriA9Tovos0wX6q5Zj9OpWU-a1_t7W5wpAycJAGm60h3NRvp-Be8X6L-5cplpALXQIgs1VZjrEN8Fk-POVA3SuK1h-F4p163jNSQ4USMJLa65yNQX6wO9vp72u-T0yy6TnWH1qtJHK7Y_x06owrCLrYjjmgb1cx9sGKi4lOCZljMINEtS1o3nQLQYSPkNzt2jQnrcxllnWZNVcXBU6j2_LGrUj28wty7DWJyg-UfR-qVntcBjiaCk64mcw/https%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fjquery%2F3.6.0%2Fjquery.min.js"></script>
+  <script src="https://secure-web.cisco.com/1bunAj54BLV_mE-BZWVv8l1LxHyD5TET3BMltFQvpIn-FbFSrBlEpTngTum7LJGRALSkq1HmVmffo7eopKK-J841PzPW04TTDnBsuMp73Zd9fj30GSOJ9iqvkqE9Tdmh1Mt-VMNhw5r-OLDDCuaxwjzyeDl8GVaVS0ERoxOHWMokIqp0r1uigCEeWrBj3xQ_sKJe66vMTxxEGFi-RR1cu4bv-wPbk16VErv_PmklWRFE-kedl99mM-z7SSnoU8ghKf2lji9Dvh32u4P_iBNAYBrYWoChXE0TyloWx3YlCXGaVIOi8YqadqzDDLDtaH2tsVm-n94E31E764DTj7xKBIstOzCuUvpZpPIRUcRi0eLoUiXbdoMLoHtcATzgJzo0zJv0QxQ6JomsAwc72ENpJuA/https%3A%2F%2Fmaxcdn.bootstrapcdn.com%2Fbootstrap%2F3.4.1%2Fjs%2Fbootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Filterable Table</h2>
+  <p>Type something in the input field to search the table for first
+names, last names or emails:</p>
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@mail.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@greatstuff.com</td>
+      </tr>
+      <tr>
+        <td>Anja</td>
+        <td>Ravendale</td>
+        <td>a_r@test.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Note that we start the search in tbody, to prevent filtering the
+table headers.</p>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+</body>
+</html>

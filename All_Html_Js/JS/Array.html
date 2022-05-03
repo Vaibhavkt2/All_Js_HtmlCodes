@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+   <p id="arrDisplay"></p> 
+   <p id="arrDisplay1"></p>
+   <p id="arrDisplay2"></p>
+   <p id="arrDisplay3"></p>
+   <p id="arrDisplay4"></p>
+   <p id="arrDisplay5"></p>
+   <p id="arrDisplay6"></p>
+   <p id="arrDisplay7"></p>
+   <p id="arrDisplay8"></p>
+ 
+   <script>
+       const employee =["Vaibhav","OM", "Viki","Yash","Ritesh", 5000]; //No Restriction Of DetaType
+        const emp1 = employee.push("VT");
+
+       const FrontEnd=[];
+       FrontEnd[0] = "Vaibhav";
+       FrontEnd[1]= "Anup";
+       FrontEnd[2]= "Vishal";
+       FrontEnd[3]= "Vishvesh";
+       FrontEnd[4]= "Anurup";
+        //Array Object
+       const ArrObject = new Array("Vaibhav","Talele");
+
+       const TraineeMark ={ TrainneName:"Vaibhav", Week: 20};
+
+       document.getElementById("arrDisplay").innerHTML= employee;
+       document.getElementById("arrDisplay1").innerHTML= FrontEnd;
+       document.getElementById("arrDisplay2").innerHTML = ArrObject;
+       document.getElementById("arrDisplay3").innerHTML =TraineeMark.TrainneName+"<br>"+TraineeMark.Week;
+       document.getElementById("arrDisplay4").innerHTML= employee.indexOf(5000);
+       document.getElementById("arrDisplay5").innerHTML= employee.pop();
+       document.getElementById("arrDisplay6").innerHTML= employee.push("VT");
+       document.getElementById("arrDisplay7").innerHTML= employee.length;
+       document.getElementById("arrDisplay8").innerHTML= employee.sort(); //Soet Assending Order
+   </script>
+
+</body>
+</html>

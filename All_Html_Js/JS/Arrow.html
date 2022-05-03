@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <script>
+        let arrowfunction = (num1, num2) => num1 + num2;             //Arrow Function Uses
+        document.getElementById("demo").innerHTML="Sum Is  :->"+ arrowfunction(10,20);
+
+        currentdate =() => Date();
+        document.getElementById("demo1").innerHTML = "Today's Date Is  :-> "+ currentdate()
+    </script>
+    <button type="button" onclick="document.getElementById('demo3').innerHTML = currentdate()"> Todays Date</button>
+    <button type="button" onclick="document.getElementById('demo4').innerHTML = arrowfunction(50,50)"> Sum Is</button>
+     
+</body>
+</html>

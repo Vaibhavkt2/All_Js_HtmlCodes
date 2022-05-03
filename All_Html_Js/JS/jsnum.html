@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="display"></p>
+    <p id="display1"></p>
+    <p id="display2"></p>
+    <p id="display3"></p>
+    <p id="display4"></p>
+    <p id="display5"></p>
+    <p id="display6"></p>
+    <p id="display7"></p>
+    <p id="display8"></p>
+    <p id="display9"></p>
+    <p id="display10"></p>
+
+    <script>
+        let number1=4.8900;
+        let number2= 4;
+        let number3= 900e10;
+        let number4= 800e-5;
+        let number5= 999999999999999;
+        let number6= 9999999999999999;
+
+        let number7= 0.2  + 0.1;
+        let number8= (0.2*10+ 0.1*10)/10;
+
+        let string1= "vaibhav"
+        let number11= "100";
+        let number12= 100;
+        let number13= number12/string1;
+
+        let nan1= NaN;
+        let number14= "100";
+        let number15= nan1 + number14;
+
+        let number16= 2/0;
+        let number17= -2/0;
+        let number18= new Number(125);
+
+        document.getElementById("display").innerHTML = number1+" <br> "+number2;
+        document.getElementById("display1").innerHTML = number3+" <br> "+number4;
+        document.getElementById("display2").innerHTML = number5+" <br> "+number6;   
+        document.getElementById("display3").innerHTML = number7;      //0.30000000000000004
+        document.getElementById("display4").innerHTML = number8;      //0.3
+
+        document.getElementById("display5").innerHTML = number11;         //100
+        document.getElementById("display6").innerHTML = isNaN(number13);   //true   
+
+        document.getElementById("display7").innerHTML = number15;       //NAN100
+        document.getElementById("display8").innerHTML = number16;           //infinity
+        document.getElementById("display9").innerHTML = number17;          // -infinity
+        document.getElementById("display10").innerHTML = typeof number18;  //object
+
+    </script>
+</body>
+</html>

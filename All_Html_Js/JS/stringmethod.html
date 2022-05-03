@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <script>
+        let str = "My Name Is Vaibhav Vaibhav Talele"
+        newstring=str.replace("Vaibhav", "vt");
+
+        document.getElementById("demo").innerHTML=str.length;
+        document.getElementById("demo1").innerHTML=str.slice(11, 25);
+        document.getElementById("demo2").innerHTML=str.slice(-14, -7);
+        document.getElementById("demo3").innerHTML=str.substr(3);
+        document.getElementById("demo4").innerHTML= str.replace("Vaibhav", "vt");
+        document.getElementById("demo5").innerHTML=str.replace(/Vaibhav/g, "vt");
+        document.getElementById("demo6").innerHTML=str.replace(/Vaibhav/i, "vt");
+        document.getElementById("demo7").innerHTML=str.toLocaleUpperCase();
+        document.getElementById("demo8").innerHTML=str.toLocaleLowerCase();
+        concatstring=str.concat(" "+"<br>"+ "Here");
+        //document.getElementById("demo9").innerHTML=str.concat(" "+"<br>"+ "Here");
+        document.getElementById("demo9").innerHTML=concatstring;
+        trimstring=concatstring.trim();
+        document.getElementById("demo10").innerHTML=trimstring;
+        document.getElementById("demo11").innerHTML=str.charAt(1);  //.......Index Value
+        document.getElementById("demo12").innerHTML=str.charCodeAt(1);  //.....ASCII Value
+        const stringarray= str.spilt("");
+        document.getElementById("demo13").innerHTML=stringarray;  // It Gives us array value (0 means my) (1 means name) 
+        
+    </script>
+</body>
+</html>

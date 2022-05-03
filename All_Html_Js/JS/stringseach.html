@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id= "demo"></p>
+    <p id= "demo1"></p>
+    <p id= "demo2"></p>
+    <p id= "demo3"></p>
+    <p id= "demo4"></p>
+    <p id= "demo5"></p>
+    <p id= "demo6"></p>
+    <p id= "demo7"></p>
+    <script>
+        let firstname="Vaibhav";
+        let lastname="Talele";
+        let secachstring= "My Name Is Vaibhav Vaibhav Talele";
+        let templatetext= `Welcome ${firstname} ${lastname}`;    // `Its Mean Backticks`
+        document.getElementById("demo").innerHTML=secachstring.indexOf("Vaibhav");    //First name index
+        document.getElementById("demo1").innerHTML=secachstring.lastIndexOf("Vaibhav");  //Last Name Index
+        document.getElementById("demo2").innerHTML=secachstring.search("Vaibhav");   // It Take First Value/ Name
+        document.getElementById("demo3").innerHTML=secachstring.match(/Vaibhav/ig); //i means first seach g means global seach all same name we can use ig/ gi also for global seach
+        document.getElementById("demo4").innerHTML=secachstring.includes("is");  //gives us boolean value true or false--> false
+        document.getElementById("demo5").innerHTML=secachstring.startsWith("My");  //boolean ans -->true
+        document.getElementById("demo6").innerHTML=secachstring.endsWith("Vaibhav"); // boolean ans --> false
+        document.getElementById("demo7").innerHTML=templatetext;
+
+    </script>
+</body>
+</html>

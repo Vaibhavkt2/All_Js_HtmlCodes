@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="Disdate"></p>
+    <p id="Disdate1"></p>
+    <p id="Disdate2"></p>
+    <p id="Disdate3"></p>
+    <p id="Disdate4"></p>
+    <p id="Disdate5"></p>
+    <p id="Disdate6"></p>
+    <p id="Disdate7"></p>
+    <p id="Disdate8"></p>
+    <p id="Disdate9"></p>
+    <p id="Disdate10"></p>
+    <p id="Disdate11"></p>
+    <p id="Disdate12"></p>
+    <p id="Disdate13"></p>
+    <p id="Disdate14"></p>
+    <p id="Disdate15"></p>
+    <p id="Disdate16"></p>
+    <p id="Disdate17"></p>
+    <p id="Disdate18"></p>
+    <p id="Disdate19"></p>
+    <p id="Disdate20"></p>
+    <p id="Disdate21"></p>
+    <p id="Disdate22"></p>
+    <script>
+        let date1 = new Date();
+        let date2 = new Date(2022, 02, 28, 14, 39, 34, 105);
+        let date3 = new Date(2022, 02);
+        let date4 = new Date(15810000000088);    
+//Different Types of date zone
+        document.getElementById("Disdate").innerHTML=date1;
+        document.getElementById("Disdate1").innerHTML=date2;
+        document.getElementById("Disdate2").innerHTML=date3;
+        document.getElementById("Disdate3").innerHTML=date4;
+        document.getElementById("Disdate4").innerHTML=date1.getDate();
+        document.getElementById("Disdate5").innerHTML=date1.getDay();
+        document.getElementById("Disdate6").innerHTML=date1.getFullYear();
+        document.getElementById("Disdate7").innerHTML=date1.getMilliseconds();
+        document.getElementById("Disdate8").innerHTML=date1.getMinutes();
+        document.getElementById("Disdate9").innerHTML=date1.getUTCDate();
+        document.getElementById("Disdate10").innerHTML=date1.getUTCDay();
+        document.getElementById("Disdate11").innerHTML=date1.setUTCFullYear(2022);
+        document.getElementById("Disdate12").innerHTML=date1.getTimezoneOffset();
+        document.getElementById("Disdate13").innerHTML=date1.setMinutes(56);
+        document.getElementById("Disdate14").innerHTML=date1.toJSON();
+        document.getElementById("Disdate15").innerHTML=date1.toDateString();
+        document.getElementById("Disdate16").innerHTML=date1.setHours(1);
+        document.getElementById("Disdate17").innerHTML=date1.toLocaleDateString();
+        document.getElementById("Disdate18").innerHTML=date1.valueOf();
+        document.getElementById("Disdate19").innerHTML=date1.setUTCMonth(2);
+        document.getElementById("Disdate20").innerHTML=date1.setTime(23);
+        document.getElementById("Disdate21").innerHTML=date1.setUTCMilliseconds(123);
+        document.getElementById("Disdate22").innerHTML=date1.toISOString();
+    </script>
+    
+</body>
+</html>
